@@ -1,0 +1,6 @@
+{
+  "name": "ANSH&CO",
+  "description": "Creative Ideas. Digital Possibilities. Building brands, creating connections, and shaping what's next.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
