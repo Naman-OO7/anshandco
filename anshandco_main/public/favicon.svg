@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#0a0a0a"/>
+  <!-- ANSH&CO Kinetic Logo Mark (6 vertical ascending-descending bars) -->
+  <g fill="#FFFFFF" transform="translate(114.75, 81) scale(1.25)">
+    <rect x="0" y="220" width="16" height="60" rx="3"/>
+    <rect x="42" y="160" width="16" height="120" rx="3"/>
+    <rect x="84" y="100" width="16" height="180" rx="3"/>
+    <rect x="126" y="0" width="16" height="280" rx="3"/>
+    <rect x="168" y="40" width="16" height="240" rx="3"/>
+    <rect x="210" y="80" width="16" height="200" rx="3"/>
+  </g>
+</svg>
