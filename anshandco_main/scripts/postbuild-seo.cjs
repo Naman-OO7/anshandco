@@ -35,7 +35,14 @@ const staticRoutes = [
   'services/seo-growth',
   'digital-marketing-agency-dehradun',
   'web-development-agency-dehradun',
-  'ai-automation-agency-dehradun'
+  'ai-automation-agency-dehradun',
+  'watch/brand-showreel',
+  'watch/studio-showcase-reel',
+  'watch/ai-workflow-automation',
+  'watch/our-reveal',
+  'watch/liquid-chrome-3d',
+  'watch/organic-seo-growth',
+  'watch/viral-reels-strategy'
 ];
 
 let updatedCount = 0;

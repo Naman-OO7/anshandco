@@ -67,7 +67,14 @@ export default function App() {
       rawPageParam === 'about'
         ? 'what-we-are'
         : (rawPageParam as PageRoute | null) || mappedPath;
-    const caseParam = params.get('case');
+    const watchCaseMap: Record<string, string> = {
+      'watch/ai-workflow-automation': 'showcase-extension-3',
+      'watch/our-reveal': 'ruru',
+      'watch/liquid-chrome-3d': 'goodhairr-co-professional',
+      'watch/organic-seo-growth': 'makimono',
+      'watch/viral-reels-strategy': 'cubic'
+    };
+    const caseParam = params.get('case') || watchCaseMap[rawPath] || null;
     const newsParam = params.get('news');
     const queryParam = (params.get('q') || params.get('search') || '').trim().toLowerCase();
     let initialPage: PageRoute = portfolioParam ? 'who-we-are' : (pageParam || 'home');
@@ -209,10 +216,56 @@ export default function App() {
         description:
           'Looking for AI automation in Dehradun (Dehradoon)? ANSH&CO builds trigger-based AI workflow automations, WhatsApp lead bots, autonomous AI sales agents, and custom CRM/ERP software in Dehradun. Call +91 76684 22047.',
         url: 'https://anshandco.com/ai-automation-agency-dehradun'
+      },
+      'watch/brand-showreel': {
+        title: 'ANSH&CO Official Brand Showreel — Brand Custodianship & AI Solutions | Watch',
+        description:
+          'Watch the official ANSH&CO Brand Showreel showcasing 100% in-house Brand Custodianship, Next.js Web Engineering, AI Workflow Automation, and Viral Growth in Dehradun, India.',
+        url: 'https://anshandco.com/watch/brand-showreel'
+      },
+      'watch/studio-showcase-reel': {
+        title: 'ANSH&CO Studio Showcase Reel — Creative Direction, Web Engineering & AI Motion | Watch',
+        description:
+          'Watch the ANSH&CO Studio Showcase Reel demonstrating multidisciplinary brand custodianship, custom Next.js software architecture, and cinematic 3D motion production.',
+        url: 'https://anshandco.com/watch/studio-showcase-reel'
+      },
+      'watch/ai-workflow-automation': {
+        title: 'AI Business Workflow Automation & Custom CRM Pipeline by ANSH&CO | Watch',
+        description:
+          'Watch how ANSH&CO engineers trigger-based AI workflow automations that capture leads from websites and WhatsApp and sync custom CRM pipelines automatically.',
+        url: 'https://anshandco.com/watch/ai-workflow-automation'
+      },
+      'watch/our-reveal': {
+        title: 'OUR REVEAL — ANSH&CO Signature Brand Identity & Kinetic Logo Animation | Watch',
+        description:
+          'Watch OUR REVEAL: Signature kinetic brandmark reveal, luxury spatial collateral, and visual identity system crafted 100% in-house by ANSH&CO.',
+        url: 'https://anshandco.com/watch/our-reveal'
+      },
+      'watch/liquid-chrome-3d': {
+        title: 'ANSH&CO. PROFESSIONAL — 3D Liquid Chrome Identity & Packaging System Reveal | Watch',
+        description:
+          'Watch the 3D liquid chrome logo reveal, luxury salon packaging system, and AI creative engineering showcase produced in-house by ANSH&CO Professional.',
+        url: 'https://anshandco.com/watch/liquid-chrome-3d'
+      },
+      'watch/organic-seo-growth': {
+        title: 'ORGANIC SEO & GROWTH ENGINE — Technical SEO & Search Dominance by ANSH&CO | Watch',
+        description:
+          'Watch how ANSH&CO engineers Technical SEO architecture, AEO/GEO search optimization, and organic customer acquisition funnels delivering 4.2x organic growth.',
+        url: 'https://anshandco.com/watch/organic-seo-growth'
+      },
+      'watch/viral-reels-strategy': {
+        title: 'TERA BHAI SAMBHAL LEGA — Viral Reels & High-Converting Ad Strategy by ANSH&CO | Watch',
+        description:
+          'Watch how ANSH&CO produces viral short-form video reels, pop-culture meme creative strategy, and high-converting Meta & Google ad campaigns.',
+        url: 'https://anshandco.com/watch/viral-reels-strategy'
       }
     };
 
-    if (selectedCaseStudy) {
+    if (rawPath.startsWith('watch/') && serviceRouteMeta[rawPath]) {
+      title = serviceRouteMeta[rawPath].title;
+      description = serviceRouteMeta[rawPath].description;
+      canonicalUrl = serviceRouteMeta[rawPath].url;
+    } else if (selectedCaseStudy) {
       title = `${selectedCaseStudy.title} — ${selectedCaseStudy.client} Case Study | ANSH&CO`;
       description = `${selectedCaseStudy.summary} Delivered by ANSH&CO Brand Custodianship & AI Engineering Studio.`;
       canonicalUrl = `https://anshandco.com/?case=${selectedCaseStudy.id}`;
