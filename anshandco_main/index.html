@@ -9,10 +9,13 @@
     <link rel="icon" type="image/png" sizes="96x96" href="/ansh-brand-icon-96.png?v=20261103" />
     <link rel="icon" type="image/png" sizes="192x192" href="/ansh-brand-icon-192.png?v=20261103" />
     <link rel="icon" type="image/png" sizes="512x512" href="/ansh-brand-icon-512.png?v=20261103" />
+    <link rel="icon" type="image/webp" sizes="512x512" href="/logo.webp?v=20261103" />
     <link rel="icon" type="image/x-icon" href="/ansh-brand-icon.ico?v=20261103" />
     <link rel="shortcut icon" type="image/x-icon" href="/ansh-brand-icon.ico?v=20261103" />
     <link rel="apple-touch-icon" sizes="180x180" href="/ansh-brand-apple-icon.png?v=20261103" />
     <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preload" as="image" href="/anshandco-poster.webp" type="image/webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="/logo.webp" type="image/webp" />
 
     <meta name="google-site-verification" content="JRzJDZtB_vjIXIQM0V60SlQ5xUFdAFBQj53ftMH2e-w" />
 
@@ -177,16 +180,18 @@
           "logo": {
             "@type": "ImageObject",
             "@id": "https://anshandco.com/#logo",
-            "url": "https://anshandco.com/logo.png",
-            "contentUrl": "https://anshandco.com/ansh_logo.jpg",
+            "url": "https://anshandco.com/logo.webp",
+            "contentUrl": "https://anshandco.com/ansh_logo.webp",
             "width": 512,
             "height": 512,
             "caption": "ANSH&CO Official Logo"
           },
           "image": [
+            "https://anshandco.com/logo.webp",
+            "https://anshandco.com/ansh_logo.webp",
+            "https://anshandco.com/anshandco-poster.webp",
             "https://anshandco.com/logo.png",
             "https://anshandco.com/ansh_logo.jpg",
-            "https://file.garden/aqpuSRZZW6ZbIllx/ansh_logo.jpg",
             "https://anshandco.com/android-chrome-512x512.png"
           ],
           "email": "contact@anshandco.com",
@@ -569,6 +574,7 @@
           "name": "ANSH&CO Official Showreel — Brand Custodianship, AI Solutions & Digital Engineering",
           "description": "Official hero showreel of ANSH&CO showcasing brand custodianship, Next.js web engineering, AI workflow automation, and viral motion production.",
           "thumbnailUrl": [
+            "https://anshandco.com/anshandco-poster.webp",
             "https://anshandco.com/anshandco-poster.jpg"
           ],
           "uploadDate": "2026-01-15T08:00:00+05:30",
@@ -791,7 +797,7 @@
       <!-- Static pre-hydration SEO & AI Agent crawlable shell (replaced cleanly by React on mount) -->
       <header class="sr-only">
         <a href="https://anshandco.com/">
-          <img src="/logo.png" alt="ANSH&amp;CO Official Brand Logo" width="48" height="48" />
+          <img src="/logo.webp" alt="ANSH&amp;CO Official Brand Logo" width="48" height="48" decoding="async" />
           ANSH&amp;CO
         </a>
         <nav aria-label="Primary Navigation">

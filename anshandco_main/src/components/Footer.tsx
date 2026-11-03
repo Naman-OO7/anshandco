@@ -246,10 +246,17 @@ export const Footer: React.FC<FooterProps> = ({
           <div className="text-left md:text-right flex flex-col items-start md:items-end">
             <div className="flex items-center gap-3">
               <img
-                src="/logo.png"
+                src="/logo.webp"
                 alt="ANSH&CO Official Logo"
                 width={38}
                 height={38}
+                loading="lazy"
+                decoding="async"
+                onError={(e) => {
+                  if (!e.currentTarget.src.endsWith('/logo.png')) {
+                    e.currentTarget.src = '/logo.png';
+                  }
+                }}
                 className="w-9 h-9 rounded-md object-cover border border-neutral-800"
               />
               <span className="text-[28px] md:text-[34px] font-normal tracking-[0.2em] uppercase text-white block">

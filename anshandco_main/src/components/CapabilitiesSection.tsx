@@ -97,7 +97,7 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onKnow
             className="flex items-center gap-6 cursor-pointer group transition-all duration-300 transform hover:translate-x-3 hover:scale-[1.01]"
           >
             <img
-              src="/assets/aistudio/ansh_logo_d7f34171.jpg"
+              src="/ansh_logo.webp"
               alt="ANSH&CO Brand Custodianship Strategy and AI Market Positioning"
               loading="lazy"
               decoding="async"
@@ -123,7 +123,7 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onKnow
             className="flex items-center gap-6 cursor-pointer group transition-all duration-300 transform hover:translate-x-3 hover:scale-[1.01]"
           >
             <img
-              src="/m1.jpg"
+              src="/m1.webp"
               alt="ANSH&CO Brand Identity Design, Packaging Architecture, and Brand Custodianship"
               loading="lazy"
               decoding="async"
@@ -151,7 +151,7 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onKnow
               className="flex items-center gap-4 cursor-pointer group transition-all duration-300 transform hover:translate-x-2 hover:scale-[1.01]"
             >
               <img
-                src="/m2.jpg"
+                src="/m2.webp"
                 alt="ANSH&CO Digital Product Design, AI Automation Systems, and Brand Custodianship"
                 loading="lazy"
                 decoding="async"
@@ -177,7 +177,7 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onKnow
               className="flex items-center gap-4 cursor-pointer group transition-all duration-300 transform hover:translate-x-2 hover:scale-[1.01]"
             >
               <img
-                src="/meme1.jpg"
+                src="/meme1.webp"
                 alt="ANSH&CO Performance Marketing, SEO, Meta Ads, and AI Growth Services"
                 loading="lazy"
                 decoding="async"
@@ -204,7 +204,7 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onKnow
             className="flex items-center gap-6 cursor-pointer group transition-all duration-300 transform hover:translate-x-3 hover:scale-[1.01]"
           >
             <img
-              src="/m3.jpg"
+              src="/m3.webp"
               alt="ANSH&CO Full-Stack Next.js Web Development, Mobile Apps, and Custom AI CRM/ERP Engineering"
               loading="lazy"
               decoding="async"
@@ -230,7 +230,7 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onKnow
             className="flex items-center gap-6 cursor-pointer group transition-all duration-300 transform hover:translate-x-3 hover:scale-[1.01]"
           >
             <img
-              src="/meme2.jpg"
+              src="/meme2.webp"
               alt="ANSH&CO Cinematic Video Editing, AI Video Generation, and Viral Reels Production"
               loading="lazy"
               decoding="async"

@@ -8,7 +8,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     role: 'Developer & Solution Creator',
     creativeRole: 'THE SYSTEM ARCHITECT & PROBABILITY BUILDER',
     category: 'Engineering, Intelligent Systems & Product',
-    avatarUrl: 'https://file.garden/aqpuSRZZW6ZbIllx/naman_Editor.png',
+    avatarUrl: '/team/naman_Editor.webp',
     tagline: 'Bridging engineering precision, cognitive workflows, and ruthless creative design to build software that scales.',
     bio: 'Pioneering full-stack web and mobile engineering, agentic AI pipelines, and intuitive UI systems. Obsessed with high-speed execution, probabilistic problem-solving, and crafting digital products that convert vision into functional reality.',
     expertise: [
@@ -102,7 +102,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     role: 'Creative Media Specialist',
     creativeRole: 'THE DIGITAL STORYTELLER & VISUAL CONTENT ARCHITECT',
     category: 'Creative Media, Digital Content & Visual Production',
-    avatarUrl: 'https://file.garden/aqpuSRZZW6ZbIllx/ankit_pic.jpg',
+    avatarUrl: '/team/ankit_pic.webp',
     tagline: 'Crafting compelling digital narratives, high-impact motion visuals, and strategic multimedia campaigns.',
     bio: 'Creative Media Specialist with 2 years of experience creating engaging digital content and visual creatives. Spearheading high-retention digital storytelling, brand-defining motion assets, and cross-platform creative campaigns that captivate audiences and turn attention into measurable resonance.',
     expertise: [
@@ -181,7 +181,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     role: 'Digital Media & Operations Specialist',
     creativeRole: 'THE MULTI-DISCIPLINARY DIGITAL ARCHITECT & OPERATIONS SPECIALIST',
     category: 'Digital Media, Web Architecture & Business Operations',
-    avatarUrl: 'https://file.garden/aqpuSRZZW6ZbIllx/vanshika_pic.jpg',
+    avatarUrl: '/team/vanshika_pic.webp',
     tagline: 'Harmonizing high-retention video storytelling, WordPress web design, and data-driven operational intelligence.',
     bio: 'Versatile digital media and operations specialist blending creative video editing, WordPress web design, and social strategy with rigorous Excel analytics, Tally Prime financial coordination, and high-impact client engagement.',
     expertise: [
@@ -271,7 +271,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     role: 'Graphic, Brand & Visual Identity Designer',
     creativeRole: 'THE BRAND IDENTITY STYLIST & VISUAL ARCHITECT',
     category: 'Graphic Design, Brand Identity & Creator Strategy',
-    avatarUrl: 'https://file.garden/aqpuSRZZW6ZbIllx/ankita_pic.jpg',
+    avatarUrl: '/team/ankita_pic.webp',
     tagline: 'Transforming visionary brands through bespoke identity systems, striking editorial typography, and high-engagement creator strategies.',
     bio: 'I craft distinctive visual brand identities, expressive typography, and strategic influencer assets that elevate personal brands, captivate modern communities, and turn aesthetics into unforgettable cultural authority.',
     expertise: [
@@ -359,7 +359,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     role: 'B2B Growth & Business Development Specialist',
     creativeRole: 'THE COMMERCIAL ARCHITECT & REVENUE STRATEGIST',
     category: 'B2B Development, Sales Pitching & Deal Strategy',
-    avatarUrl: 'https://file.garden/aqpuSRZZW6ZbIllx/sharad_pic.jpg',
+    avatarUrl: '/team/sharad_pic.webp',
     tagline: 'Structuring enterprise B2B pipelines, commanding persuasive sales pitching, and forging high-value commercial partnerships.',
     bio: 'I engineer high-impact B2B outreach pipelines, command persuasive sales negotiations, and nurture strategic client relationships that bridge agency capabilities with accelerated revenue growth and enduring enterprise partnerships.',
     expertise: [
@@ -449,7 +449,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     role: 'Digital Growth Strategist & AI Media Specialist',
     creativeRole: 'THE ALGORITHMIC GROWTH SCIENTIST & AI MEDIA ARCHITECT',
     category: 'Performance Marketing, AI Video & Digital Distribution',
-    avatarUrl: 'https://file.garden/aqpuSRZZW6ZbIllx/arpit_pic.jpg',
+    avatarUrl: '/team/arpit_pic.webp',
     tagline: 'Fusing high-converting Meta and Google ads with cutting-edge AI video creation, technical SEO, and cinematic storytelling.',
     bio: 'I drive scalable brand growth by fusing high-performance Meta and Google ads with technical SEO, cutting-edge AI video creation, cinematic video editing, strategic social media management, and high-impact outreach.',
     expertise: [
@@ -544,7 +544,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     role: 'Creative Director & Multi-Disciplinary Designer',
     creativeRole: 'THE MULTI-DISCIPLINARY CREATIVE DIRECTOR & VISUAL STORYTELLER',
     category: 'Brand Identity, Motion Graphics & UI/UX Design',
-    avatarUrl: 'https://file.garden/aqpuSRZZW6ZbIllx/hardeep_pic.jpg',
+    avatarUrl: '/team/hardeep_pic.webp',
     tagline: 'Transforming concepts into compelling visual narratives through distinctive brand systems, kinetic motion, and user-centric web design.',
     bio: 'I am Hardeep, a multidisciplinary creative director and visual designer crafting distinctive brand identities, cinematic video edits, fluid motion graphics, and user-focused UI/UX systems that transform ambitious concepts into compelling visual narratives.',
     expertise: [

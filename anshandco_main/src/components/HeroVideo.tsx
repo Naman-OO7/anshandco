@@ -83,7 +83,7 @@ export const HeroVideo: React.FC = () => {
             ref={videoRef}
             id="hero-video"
             src="/hero-vid.mp4"
-            poster="/anshandco-poster.jpg"
+            poster="/anshandco-poster.webp"
             onClick={handleVideoClick}
             autoPlay
             loop

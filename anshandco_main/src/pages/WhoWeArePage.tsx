@@ -101,6 +101,8 @@ export const WhoWeArePage: React.FC<WhoWeArePageProps> = ({
                       <img
                         src={avatar}
                         alt={`${member.name} — ${member.role} (${member.creativeRole}) driving brand custodianship and AI services at ANSH&CO`}
+                        loading="lazy"
+                        decoding="async"
                         referrerPolicy="no-referrer"
                         onError={(e) => {
                           const map: Record<string, string> = {

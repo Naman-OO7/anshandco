@@ -12,11 +12,11 @@ interface ViewAllDrawerProps {
 }
 
 const CASE_STUDY_SECONDARY_IMAGES: Record<string, string> = {
-  'showcase-extension-1': 'https://file.garden/aqpuSRZZW6ZbIllx/m2.jpg',
-  'roots-and-sky': 'https://file.garden/aqpuSRZZW6ZbIllx/meme5.jpg',
-  'otr-make-it-yours': 'https://file.garden/aqpuSRZZW6ZbIllx/m3.jpg',
-  'showcase-extension-2': 'https://file.garden/aqpuSRZZW6ZbIllx/m2.jpg',
-  'our-mocks': 'https://file.garden/aqpuSRZZW6ZbIllx/l2.jpg',
+  'showcase-extension-1': '/m2.webp',
+  'roots-and-sky': '/meme5.webp',
+  'otr-make-it-yours': '/m3.webp',
+  'showcase-extension-2': '/m2.webp',
+  'our-mocks': '/l2.webp',
 };
 
 const CASE_STUDY_SECONDARY_FALLBACKS: Record<string, string> = {
@@ -87,9 +87,9 @@ export const ViewAllDrawer: React.FC<ViewAllDrawerProps> = ({
               const secondaryImg =
                 (study.gallery && study.gallery.length > 1 ? study.gallery[1] : null) ||
                 CASE_STUDY_SECONDARY_IMAGES[study.id] ||
-                (study.id === 'roots-and-sky' ? '/meme5.jpg' : null) ||
-                (study.id === 'otr-make-it-yours' ? '/m3.jpg' : null) ||
-                (study.id === 'showcase-extension-1' ? '/m2.jpg' : null) ||
+                (study.id === 'roots-and-sky' ? '/meme5.webp' : null) ||
+                (study.id === 'otr-make-it-yours' ? '/m3.webp' : null) ||
+                (study.id === 'showcase-extension-1' ? '/m2.webp' : null) ||
                 study.posterUrl;
               const fallbackSec = CASE_STUDY_SECONDARY_FALLBACKS[study.id] || '/m2.jpg';
 

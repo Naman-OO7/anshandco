@@ -9,7 +9,7 @@ export const BrandReelDivider: React.FC = () => {
         {!videoError ? (
           <video
             src="https://file.garden/aqpuSRZZW6ZbIllx/main_video.mp4"
-            poster="/main_video-poster.jpg"
+            poster="/main_video-poster.webp"
             autoPlay
             loop
             muted
@@ -37,9 +37,16 @@ export const BrandReelDivider: React.FC = () => {
           </video>
         ) : (
           <img
-            src="/main_video-poster.jpg"
+            src="/main_video-poster.webp"
             alt="ANSH&CO brand custodianship, AI workflow automation, and creative motion studio showcase reel"
+            loading="lazy"
+            decoding="async"
             referrerPolicy="no-referrer"
+            onError={(e) => {
+              if (!e.currentTarget.src.endsWith('/main_video-poster.jpg')) {
+                e.currentTarget.src = '/main_video-poster.jpg';
+              }
+            }}
             className="w-full h-full object-cover"
           />
         )}

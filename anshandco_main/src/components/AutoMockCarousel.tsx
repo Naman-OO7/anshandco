@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 export const MOCK_CAROUSEL_IMAGES = [
-  'https://file.garden/aqpuSRZZW6ZbIllx/l1.jpg',
-  'https://file.garden/aqpuSRZZW6ZbIllx/l2.jpg',
-  'https://file.garden/aqpuSRZZW6ZbIllx/l3.jpg',
-  'https://file.garden/aqpuSRZZW6ZbIllx/l4.jpg'
+  '/l1.webp',
+  '/l2.webp',
+  '/l3.webp',
+  '/l4.webp'
 ];
 
 interface AutoMockCarouselProps {
@@ -56,20 +56,20 @@ export const AutoMockCarousel: React.FC<AutoMockCarouselProps> = ({
             decoding="async"
             referrerPolicy="no-referrer"
             onError={(e) => {
-              if (src.includes('m3.jpg')) {
+              if (src.includes('m3')) {
                 e.currentTarget.src = '/m3.jpg';
-              } else if (src.includes('meme5.jpg')) {
+              } else if (src.includes('meme5')) {
                 e.currentTarget.src = '/meme5.jpg';
-              } else if (src.includes('m2.jpg')) {
+              } else if (src.includes('m2')) {
                 e.currentTarget.src = '/m2.jpg';
-              } else if (src.includes('l1.jpg')) {
-                e.currentTarget.src = '/m1.jpg';
-              } else if (src.includes('l2.jpg')) {
-                e.currentTarget.src = '/m2.jpg';
-              } else if (src.includes('l3.jpg')) {
-                e.currentTarget.src = '/m3.jpg';
-              } else if (src.includes('l4.jpg')) {
-                e.currentTarget.src = '/meme5.jpg';
+              } else if (src.includes('l1')) {
+                e.currentTarget.src = '/l1.jpg';
+              } else if (src.includes('l2')) {
+                e.currentTarget.src = '/l2.jpg';
+              } else if (src.includes('l3')) {
+                e.currentTarget.src = '/l3.jpg';
+              } else if (src.includes('l4')) {
+                e.currentTarget.src = '/l4.jpg';
               }
             }}
             className={`absolute inset-0 w-full h-full ${

@@ -120,10 +120,16 @@ export const Navbar: React.FC<NavbarProps> = ({
           className="flex items-center gap-2.5 text-[20px] md:text-[24px] font-normal tracking-[0.25em] uppercase text-black dark:text-white hover:opacity-75 transition-opacity select-none cursor-pointer"
         >
           <img
-            src="/logo.png"
+            src="/logo.webp"
             alt="ANSH&CO Official Brand Logo"
             width={30}
             height={30}
+            decoding="async"
+            onError={(e) => {
+              if (!e.currentTarget.src.endsWith('/logo.png')) {
+                e.currentTarget.src = '/logo.png';
+              }
+            }}
             className="w-7 h-7 md:w-8 md:h-8 rounded-md object-cover shrink-0"
           />
           <span>ANSH&amp;CO</span>
