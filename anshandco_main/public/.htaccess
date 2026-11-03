@@ -41,6 +41,10 @@
   RewriteEngine On
   RewriteBase /
 
+  # 0. Force 301 Permanent Redirect from www.anshandco.com to canonical https://anshandco.com
+  RewriteCond %{HTTP_HOST} ^www\.anshandco\.com$ [NC]
+  RewriteRule ^(.*)$ https://anshandco.com/$1 [L,R=301]
+
   # 1. Serve Markdown representation when an AI agent requests Accept: text/markdown on Homepage
   RewriteCond %{HTTP_ACCEPT} text/markdown [NC]
   RewriteCond %{REQUEST_URI} ^/(index\.html)?$ [NC]
