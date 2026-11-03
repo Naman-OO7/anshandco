@@ -33,6 +33,10 @@
   </FilesMatch>
 </IfModule>
 
+<IfModule mod_dir.c>
+  DirectorySlash Off
+</IfModule>
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
@@ -45,11 +49,15 @@
   # 2. Allow direct access to .well-known files (including /.well-known/mcp/server-card.json)
   RewriteRule ^\.well-known/ - [L]
 
-  # 3. Allow existing files and directories (including /about, /contact, /terms, /privacy, /index.md, /llms.txt)
-  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  # 3. Serve index.html directly with 200 OK (no 301 trailing-slash redirect) when requesting a pre-rendered directory URL
   RewriteCond %{REQUEST_FILENAME} -d
+  RewriteCond %{REQUEST_FILENAME}/index.html -f
+  RewriteRule ^(.+?)/?$ $1/index.html [L]
+
+  # 4. Allow existing files
+  RewriteCond %{REQUEST_FILENAME} -f
   RewriteRule ^ - [L]
 
-  # 4. SPA Fallback to index.html
+  # 5. SPA Fallback to index.html
   RewriteRule ^ /index.html [L]
 </IfModule>
