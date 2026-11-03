@@ -66,12 +66,18 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onKnow
         </div>
 
         <div>
-          <button
-            onClick={onKnowMore}
-            className="text-[12px] uppercase font-normal tracking-[0.2em] text-black dark:text-white border-b border-black dark:border-white pb-0.5 hover:text-[#e38528] hover:border-[#e38528] transition-colors cursor-pointer"
+          <a
+            href="/what-we-provide"
+            onClick={(e) => {
+              if (!e.metaKey && !e.ctrlKey) {
+                e.preventDefault();
+                onKnowMore();
+              }
+            }}
+            className="text-[12px] uppercase font-normal tracking-[0.2em] text-black dark:text-white border-b border-black dark:border-white pb-0.5 hover:text-[#e38528] hover:border-[#e38528] transition-colors cursor-pointer inline-block"
           >
             KNOW MORE
-          </button>
+          </a>
         </div>
       </div>
 
@@ -97,6 +103,7 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onKnow
               decoding="async"
               className="sr-only"
             />
+            <a href="/what-we-are" className="sr-only">Brand Strategy &amp; Custodianship in Dehradun</a>
             <h2
               className={`text-[46px] sm:text-[68px] md:text-[88px] lg:text-[108px] font-extralight tracking-tight uppercase leading-[0.95] transition-colors duration-300 ${
                 hoveredService === 'strategy' ? 'text-black dark:text-white' : 'text-[#ededed] dark:text-[#222222]'
@@ -122,6 +129,7 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onKnow
               decoding="async"
               className="sr-only"
             />
+            <a href="/services/brand-custodianship" className="sr-only">Branding, Logo Identity &amp; Luxury Packaging Design Agency</a>
             <h2
               className={`text-[46px] sm:text-[68px] md:text-[88px] lg:text-[108px] font-extralight tracking-tight uppercase leading-[0.95] transition-colors duration-300 ${
                 hoveredService === 'branding' ? 'text-black dark:text-white' : 'text-[#ededed] dark:text-[#222222]'
@@ -149,6 +157,7 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onKnow
                 decoding="async"
                 className="sr-only"
               />
+              <a href="/ai-automation-agency-dehradun" className="sr-only">AI Automation Agency in Dehradun</a>
               <div className="text-neutral-400 dark:text-neutral-600 group-hover:text-black dark:group-hover:text-white transition-colors">
                 <ServiceDigitalBadge className="w-8 h-8 sm:w-10 sm:h-10" />
               </div>
@@ -174,6 +183,7 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onKnow
                 decoding="async"
                 className="sr-only"
               />
+              <a href="/digital-marketing-agency-dehradun" className="sr-only">Best Digital Marketing Agency in Dehradun</a>
               <div className="text-neutral-400 dark:text-neutral-600 group-hover:text-[#e38528] transition-colors">
                 <ServiceMarketingBadge className="w-7 h-7 sm:w-9 sm:h-9" />
               </div>
@@ -200,6 +210,7 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onKnow
               decoding="async"
               className="sr-only"
             />
+            <a href="/web-development-agency-dehradun" className="sr-only">Website Development Agency in Dehradun</a>
             <h2
               className={`text-[46px] sm:text-[68px] md:text-[88px] lg:text-[108px] font-extralight tracking-tight uppercase leading-[0.95] transition-colors duration-300 ${
                 hoveredService === 'development' ? 'text-black dark:text-white' : 'text-[#ededed] dark:text-[#222222]'
@@ -225,6 +236,7 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onKnow
               decoding="async"
               className="sr-only"
             />
+            <a href="/watch/studio-showcase-reel" className="sr-only">Cinematic Video Editing &amp; Viral Reels Production Studio</a>
             <h2
               className={`text-[46px] sm:text-[68px] md:text-[88px] lg:text-[108px] font-extralight tracking-tight uppercase leading-[0.95] transition-colors duration-300 ${
                 hoveredService === 'production' ? 'text-black dark:text-white' : 'text-[#ededed] dark:text-[#222222]'
@@ -257,13 +269,19 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onKnow
               Everything you need to know about partnering with ANSH&amp;CO as your brand custodians. Have an inquiry that isn't answered here?
             </p>
 
-            <button
-              onClick={handleContact}
+            <a
+              href="/contact"
+              onClick={(e) => {
+                if (!e.metaKey && !e.ctrlKey) {
+                  e.preventDefault();
+                  handleContact();
+                }
+              }}
               className="inline-flex items-center gap-2 text-[12px] font-medium tracking-[0.2em] uppercase text-black dark:text-white hover:text-[#e38528] dark:hover:text-[#e38528] border-b border-black dark:border-white hover:border-[#e38528] dark:hover:border-[#e38528] pb-1 transition-colors cursor-pointer group"
             >
               <span>Speak With Leadership</span>
               <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-            </button>
+            </a>
           </div>
 
           {/* Right Column: 5 Interactive Accordion Items */}

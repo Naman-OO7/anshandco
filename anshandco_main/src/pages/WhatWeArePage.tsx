@@ -608,30 +608,48 @@ export const WhatWeArePage: React.FC<WhatWeArePageProps> = ({
         </div>
 
         <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-4">
-          <button
-            onClick={onNavigateToProvide}
+          <a
+            href="/what-we-provide"
+            onClick={(e) => {
+              if (!e.metaKey && !e.ctrlKey) {
+                e.preventDefault();
+                onNavigateToProvide();
+              }
+            }}
             className="px-7 py-3.5 border border-white text-white text-[13px] font-light hover:bg-white hover:text-black transition-colors flex items-center justify-center gap-2 cursor-pointer"
           >
             <span>What We Provide</span>
             <ArrowRight size={14} />
-          </button>
+          </a>
 
           {onNavigateToTeam && (
-            <button
-              onClick={onNavigateToTeam}
+            <a
+              href="/who-we-are"
+              onClick={(e) => {
+                if (!e.metaKey && !e.ctrlKey) {
+                  e.preventDefault();
+                  onNavigateToTeam();
+                }
+              }}
               className="px-7 py-3.5 border border-neutral-700 text-neutral-300 text-[13px] font-light hover:border-white hover:text-white transition-colors flex items-center justify-center gap-2 cursor-pointer"
             >
               <span>Who We Are</span>
               <ArrowRight size={14} />
-            </button>
+            </a>
           )}
 
-          <button
-            onClick={onOpenContact}
+          <a
+            href="/contact"
+            onClick={(e) => {
+              if (!e.metaKey && !e.ctrlKey) {
+                e.preventDefault();
+                onOpenContact();
+              }
+            }}
             className="px-8 py-3.5 bg-[#e38528] text-black text-[13px] font-medium hover:bg-[#cf741e] transition-colors flex items-center justify-center gap-2 cursor-pointer"
           >
             <span>Start a Conversation</span>
-          </button>
+          </a>
         </div>
       </div>
     </div>

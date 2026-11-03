@@ -318,9 +318,9 @@ export const Footer: React.FC<FooterProps> = ({
             <InstagramIcon className="w-5 h-5" />
           </a>
           <a
-            href="https://www.x.com"
+            href="https://x.com/anshandco"
             target="_blank"
-            rel="noreferrer"
+            rel="me noopener noreferrer"
             aria-label="X (Twitter)"
             className="hover:text-[#e38528] transition-colors"
           >
@@ -328,6 +328,59 @@ export const Footer: React.FC<FooterProps> = ({
           </a>
         </div>
       </div>
+
+      {/* Persistent post-hydration crawlable internal & external link architecture for Googlebot WRS (100% visually hidden) */}
+      <nav aria-label="Complete ANSH&CO Internal Link Matrix & Site Directory" className="sr-only">
+        <h2>ANSH&amp;CO Complete Internal Link Directory</h2>
+        <ul>
+          <li><a href="https://anshandco.com/">ANSH&amp;CO — Brand Custodian, AI Solutions &amp; Web Engineering Studio Home</a></li>
+          <li><a href="https://anshandco.com/what-we-are">What We Are — Brand Custodian &amp; AI Engineering Studio Manifesto</a></li>
+          <li><a href="https://anshandco.com/who-we-are">Who We Are — In-House Engineers, Designers &amp; Growth Strategists</a></li>
+          <li><a href="https://anshandco.com/what-we-provide">What We Provide — 15 In-House Capabilities in Web, AI, Branding &amp; SEO</a></li>
+          <li><a href="https://anshandco.com/who-trust-us">Who Trust Us — Enterprise Clients, Case Studies &amp; Reviews</a></li>
+          <li><a href="https://anshandco.com/about">About ANSH&amp;CO Studios &amp; Headquarters Dehradun</a></li>
+          <li><a href="https://anshandco.com/contact">Contact ANSH&amp;CO Leadership Desk (+91 76684 22047)</a></li>
+          <li><a href="https://anshandco.com/terms">Terms of Service &amp; Commercial Engagement Agreement</a></li>
+          <li><a href="https://anshandco.com/privacy">Privacy Policy &amp; Enterprise Data Stewardship</a></li>
+          <li><a href="https://anshandco.com/digital-marketing-agency-dehradun">Best Digital Marketing Agency in Dehradun (Dehradoon) — SEO, Meta Ads &amp; Viral Growth</a></li>
+          <li><a href="https://anshandco.com/web-development-agency-dehradun">Website Development Agency in Dehradun (Dehradoon) — Next.js, E-Commerce &amp; Mobile Apps</a></li>
+          <li><a href="https://anshandco.com/ai-automation-agency-dehradun">AI Automation Agency in Dehradun (Dehradoon) — Custom CRM, ERP &amp; Autonomous AI Agents</a></li>
+          <li><a href="https://anshandco.com/services/ai-automation">AI Workflow Automation, Lead Capture &amp; Custom CRM Engineering</a></li>
+          <li><a href="https://anshandco.com/services/web-engineering">High-Speed React &amp; Next.js Web Development &amp; Mobile App Engineering</a></li>
+          <li><a href="https://anshandco.com/services/brand-custodianship">Brand Custodianship, Luxury Packaging Design &amp; 3D Visual Identity</a></li>
+          <li><a href="https://anshandco.com/services/seo-growth">Technical SEO, AEO, GEO Search Domination &amp; Performance Marketing</a></li>
+          <li><a href="https://anshandco.com/watch/brand-showreel">Watch ANSH&amp;CO Official Brand Showreel</a></li>
+          <li><a href="https://anshandco.com/watch/studio-showcase-reel">Watch ANSH&amp;CO Studio Showcase Reel</a></li>
+          <li><a href="https://anshandco.com/watch/ai-workflow-automation">Watch AI Business Workflow Automation &amp; Custom CRM Pipeline</a></li>
+          <li><a href="https://anshandco.com/watch/our-reveal">Watch OUR REVEAL — Signature Brand Identity &amp; Kinetic Logo Animation</a></li>
+          <li><a href="https://anshandco.com/watch/liquid-chrome-3d">Watch ANSH&amp;CO Professional 3D Liquid Chrome Identity &amp; Packaging Reveal</a></li>
+          <li><a href="https://anshandco.com/watch/organic-seo-growth">Watch Organic SEO &amp; Growth Engine Case Study Video</a></li>
+          <li><a href="https://anshandco.com/watch/viral-reels-strategy">Watch Viral Reels &amp; High-Converting Ad Strategy Video</a></li>
+          <li><a href="https://anshandco.com/?case=showcase-extension-1">High-Speed Next.js Website Speed &amp; CRO Case Study</a></li>
+          <li><a href="https://anshandco.com/?case=showcase-extension-2">Viral Meme Marketing &amp; High-Converting Ad Campaigns Case Study</a></li>
+          <li><a href="https://anshandco.com/?case=showcase-extension-3">AI Business Workflow Automation &amp; Custom CRM Case Study</a></li>
+          <li><a href="https://anshandco.com/?case=roots-and-sky">Performance Marketing &amp; Category Dominance Case Study</a></li>
+          <li><a href="https://anshandco.com/?case=otr-make-it-yours">Cinematic Short-Form Video Editing &amp; Viral Reels Case Study</a></li>
+          <li><a href="https://anshandco.com/?case=ruru">OUR REVEAL Brand Identity &amp; Spatial System Case Study</a></li>
+          <li><a href="https://anshandco.com/?case=goodhairr-co-professional">ANSH&amp;CO Professional 3D Liquid Chrome Packaging Case Study</a></li>
+          <li><a href="https://anshandco.com/?case=our-mocks">Luxury Brand Packaging &amp; Tactile Mockup Architecture Case Study</a></li>
+          <li><a href="https://anshandco.com/?case=makimono">Technical SEO &amp; Organic Search Growth Engine Case Study</a></li>
+          <li><a href="https://anshandco.com/?case=cubic">Omnichannel Brand Custodianship &amp; Viral Growth Case Study</a></li>
+          <li><a href="https://anshandco.com/?portfolio=naman">Naman — Developer &amp; AI Solution Architect Portfolio</a></li>
+          <li><a href="https://anshandco.com/?portfolio=hardeep">Hardeep — Creative Director &amp; 3D Motion Designer Portfolio</a></li>
+          <li><a href="https://anshandco.com/?portfolio=member-02">Ankit — Creative Media &amp; Video Production Specialist Portfolio</a></li>
+          <li><a href="https://anshandco.com/?portfolio=member-03">Vanshika — Digital Media &amp; Operations Specialist Portfolio</a></li>
+          <li><a href="https://anshandco.com/?portfolio=member-04">Ankita — Brand Identity &amp; Packaging Designer Portfolio</a></li>
+          <li><a href="https://anshandco.com/?portfolio=member-05">Sharad — B2B Growth &amp; Commercial Architect Portfolio</a></li>
+          <li><a href="https://anshandco.com/?portfolio=member-06">Arpit — Technical SEO, AI Media &amp; Performance Marketing Specialist Portfolio</a></li>
+          <li><a href="https://anshandco.com/sitemap.xml">XML Sitemap</a></li>
+          <li><a href="https://anshandco.com/feed.xml">Atom Feed</a></li>
+          <li><a href="https://anshandco.com/rss.xml">RSS 2.0 Feed</a></li>
+          <li><a href="https://anshandco.com/llms.txt">LLMs.txt AI Index</a></li>
+          <li><a href="https://anshandco.com/llms-full.txt">Complete AI Knowledge Base</a></li>
+          <li><a href="https://anshandco.com/index.md">Markdown Site Representation</a></li>
+        </ul>
+      </nav>
     </footer>
   );
 };

@@ -49,12 +49,18 @@ export const WorkWithUsCTA: React.FC<WorkWithUsCTAProps> = ({ onOpenContact }) =
 
         {/* Right Action Pill */}
         <div className="flex flex-col gap-4 w-full sm:w-auto items-start lg:items-end">
-          <button
-            onClick={onOpenContact}
+          <a
+            href="/contact"
+            onClick={(e) => {
+              if (!e.metaKey && !e.ctrlKey) {
+                e.preventDefault();
+                onOpenContact();
+              }
+            }}
             className="w-full sm:w-[360px] md:w-[400px] h-[80px] md:h-[95px] rounded-full border border-white text-white text-[32px] md:text-[44px] font-light flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300 cursor-pointer select-none"
           >
             Contact Us
-          </button>
+          </a>
         </div>
       </div>
     </section>

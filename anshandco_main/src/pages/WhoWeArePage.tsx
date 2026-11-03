@@ -203,12 +203,18 @@ export const WhoWeArePage: React.FC<WhoWeArePageProps> = ({
             · Serving global brands worldwide.
           </p>
         </div>
-        <button
-          onClick={onOpenContact}
+        <a
+          href="/contact"
+          onClick={(e) => {
+            if (!e.metaKey && !e.ctrlKey) {
+              e.preventDefault();
+              onOpenContact();
+            }
+          }}
           className="px-6 py-2.5 rounded-full border border-black dark:border-white bg-black dark:bg-white text-white dark:text-black text-[13px] font-light hover:bg-transparent dark:hover:bg-transparent hover:text-black dark:hover:text-white transition-all cursor-pointer whitespace-nowrap self-start md:self-auto"
         >
           Get in Touch With Leadership
-        </button>
+        </a>
       </div>
     </div>
   );

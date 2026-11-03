@@ -36,12 +36,18 @@ export const MissionSection: React.FC<MissionSectionProps> = ({ onKnowMore }) =>
           </p>
 
           {/* CTA Link */}
-          <button
-            onClick={onKnowMore}
-            className="text-[12px] uppercase font-normal tracking-[0.2em] text-black dark:text-white border-b border-black dark:border-white pb-0.5 hover:text-[#e38528] hover:border-[#e38528] transition-colors cursor-pointer"
+          <a
+            href="/what-we-provide"
+            onClick={(e) => {
+              if (!e.metaKey && !e.ctrlKey) {
+                e.preventDefault();
+                onKnowMore();
+              }
+            }}
+            className="text-[12px] uppercase font-normal tracking-[0.2em] text-black dark:text-white border-b border-black dark:border-white pb-0.5 hover:text-[#e38528] hover:border-[#e38528] transition-colors cursor-pointer inline-block"
           >
             KNOW MORE
-          </button>
+          </a>
         </div>
       </div>
     </section>

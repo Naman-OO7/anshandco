@@ -311,15 +311,19 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           {/* Bottom Actions & Social Footer */}
           <div className="flex flex-col gap-5 pt-8 mt-6 border-t border-neutral-200 dark:border-neutral-800">
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenContact();
+            <a
+              href="/contact"
+              onClick={(e) => {
+                if (!e.metaKey && !e.ctrlKey) {
+                  e.preventDefault();
+                  setMobileMenuOpen(false);
+                  onOpenContact();
+                }
               }}
-              className="w-full py-4 rounded-full border border-black dark:border-white bg-black dark:bg-white text-white dark:text-black text-[15px] uppercase tracking-wider font-medium hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-colors cursor-pointer text-center shadow-lg active:scale-[0.99]"
+              className="w-full py-4 rounded-full border border-black dark:border-white bg-black dark:bg-white text-white dark:text-black text-[15px] uppercase tracking-wider font-medium hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-colors cursor-pointer text-center shadow-lg active:scale-[0.99] block"
             >
               Contact Leadership
-            </button>
+            </a>
 
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2 text-neutral-500 dark:text-neutral-400 text-[12px] font-light">
               <span className="font-mono uppercase tracking-wider text-[11px] text-neutral-400 dark:text-neutral-500">
@@ -329,7 +333,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <a
                   href="https://www.linkedin.com/company/ansh-co/"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="me noopener noreferrer"
                   aria-label="LinkedIn"
                   className="p-1 hover:text-[#e38528] transition-colors"
                 >
@@ -338,16 +342,16 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <a
                   href="https://www.instagram.com/anshandco?obrf=dDc0dWcwcDdmbDhy&utm_source=qr"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="me noopener noreferrer"
                   aria-label="Instagram"
                   className="p-1 hover:text-[#e38528] transition-colors"
                 >
                   <InstagramIcon className="w-4 h-4" />
                 </a>
                 <a
-                  href="https://www.x.com"
+                  href="https://x.com/anshandco"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="me noopener noreferrer"
                   aria-label="X (Twitter)"
                   className="p-1 hover:text-[#e38528] transition-colors"
                 >

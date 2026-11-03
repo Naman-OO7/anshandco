@@ -40,12 +40,18 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({
         </div>
 
         <div>
-          <button
-            onClick={onViewAll}
-            className="text-[12px] uppercase font-normal tracking-[0.2em] text-black dark:text-white border-b border-black dark:border-white pb-0.5 hover:text-[#e38528] hover:border-[#e38528] transition-colors cursor-pointer"
+          <a
+            href="/who-trust-us"
+            onClick={(e) => {
+              if (!e.metaKey && !e.ctrlKey && onViewAll) {
+                e.preventDefault();
+                onViewAll();
+              }
+            }}
+            className="text-[12px] uppercase font-normal tracking-[0.2em] text-black dark:text-white border-b border-black dark:border-white pb-0.5 hover:text-[#e38528] hover:border-[#e38528] transition-colors cursor-pointer inline-block"
           >
             VIEW ALL
-          </button>
+          </a>
         </div>
       </div>
 
@@ -69,7 +75,10 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({
                 : 'opacity-100'
             }`}
           >
-            <h2 className="sr-only">High-Speed Next.js Web Development &amp; Conversion Optimization Agency</h2>
+            <h2 className="sr-only">
+              <a href="/?case=showcase-extension-1">High-Speed Next.js Web Development &amp; Conversion Optimization Agency</a>
+            </h2>
+            <a href="/web-development-agency-dehradun" className="sr-only">Website Development Agency in Dehradun</a>
             <MediaCard
               study={extension1}
               onSelect={() => onSelectCaseStudy(extension1)}
@@ -107,7 +116,10 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({
                 : 'opacity-100'
             }`}
           >
-            <h2 className="sr-only">Viral Meme Marketing, Pop-Culture Hooks &amp; High-Converting Ad Agency India</h2>
+            <h2 className="sr-only">
+              <a href="/?case=showcase-extension-2">Viral Meme Marketing, Pop-Culture Hooks &amp; High-Converting Ad Agency India</a>
+            </h2>
+            <a href="/digital-marketing-agency-dehradun" className="sr-only">Best Digital Marketing Agency in Dehradun</a>
             <AutoMockCarousel
               images={extension2.gallery || [
                 'https://file.garden/aqpuSRZZW6ZbIllx/m3.jpg',
@@ -150,7 +162,11 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({
                 : 'opacity-100'
             }`}
           >
-            <h2 className="sr-only">AI Business Workflow Automation &amp; Custom CRM/ERP Software Development</h2>
+            <h2 className="sr-only">
+              <a href="/?case=showcase-extension-3">AI Business Workflow Automation &amp; Custom CRM/ERP Software Development</a>
+            </h2>
+            <a href="/watch/ai-workflow-automation" className="sr-only">Watch AI Workflow Automation &amp; Custom CRM Video</a>
+            <a href="/ai-automation-agency-dehradun" className="sr-only">AI Automation Agency in Dehradun</a>
             <MediaCard
               study={extension3}
               onSelect={() => onSelectCaseStudy(extension3)}
@@ -191,7 +207,9 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({
                 : 'opacity-100'
             }`}
           >
-            <h2 className="sr-only">Performance Marketing, Meta Ads &amp; Category Dominance Agency</h2>
+            <h2 className="sr-only">
+              <a href="/?case=roots-and-sky">Performance Marketing, Meta Ads &amp; Category Dominance Agency</a>
+            </h2>
             <MediaCard
               study={rootsAndSky}
               onSelect={() => onSelectCaseStudy(rootsAndSky)}
@@ -229,7 +247,9 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({
                 : 'opacity-100'
             }`}
           >
-            <h2 className="sr-only">Cinematic Video Editing &amp; Viral Instagram/YouTube Reels Production Studio</h2>
+            <h2 className="sr-only">
+              <a href="/?case=otr-make-it-yours">Cinematic Video Editing &amp; Viral Instagram/YouTube Reels Production Studio</a>
+            </h2>
             <MediaCard
               study={otr}
               onSelect={() => onSelectCaseStudy(otr)}
@@ -266,6 +286,8 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({
                 : 'opacity-100'
             }`}
           >
+            <a href="/?case=ruru" className="sr-only">OUR REVEAL — ANSH&amp;CO Brand Identity Case Study</a>
+            <a href="/watch/our-reveal" className="sr-only">Watch OUR REVEAL Brand Identity Video</a>
             <MediaCard
               study={ruru}
               onSelect={() => onSelectCaseStudy(ruru)}
@@ -293,6 +315,8 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({
           onClick={() => onSelectCaseStudy(anshProfessional)}
           className="w-full flex flex-col cursor-pointer group card-hover-lift"
         >
+          <a href="/?case=goodhairr-co-professional" className="sr-only">ANSH&amp;CO Professional 3D Liquid Chrome Identity Case Study</a>
+          <a href="/watch/liquid-chrome-3d" className="sr-only">Watch 3D Liquid Chrome Packaging Reveal Video</a>
           <MediaCard 
             study={anshProfessional} 
             onSelect={() => onSelectCaseStudy(anshProfessional)} 
@@ -314,6 +338,7 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({
             onClick={() => onSelectCaseStudy(ourMocks)}
             className="col-span-1 md:col-span-6 flex flex-col cursor-pointer group card-hover-lift"
           >
+            <a href="/?case=our-mocks" className="sr-only">OUR MOCKS — Luxury Packaging &amp; Brand Custodianship Case Study</a>
             <AutoMockCarousel
               aspect="aspect-[4/3] md:aspect-[1.15/1]"
               alt="ANSH&CO brand custodianship mockups, tactile packaging design, and AI-driven visual identity systems"
@@ -332,6 +357,8 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({
             onClick={() => onSelectCaseStudy(makimono)}
             className="col-span-1 md:col-span-3 flex flex-col cursor-pointer group card-hover-lift"
           >
+            <a href="/?case=makimono" className="sr-only">ORGANIC SEO &amp; GROWTH ENGINE — Technical SEO Case Study</a>
+            <a href="/watch/organic-seo-growth" className="sr-only">Watch Organic SEO &amp; Growth Engine Video</a>
             <MediaCard
               study={makimono}
               onSelect={() => onSelectCaseStudy(makimono)}
@@ -351,6 +378,8 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({
             onClick={() => onSelectCaseStudy(cubic)}
             className="col-span-1 md:col-span-3 flex flex-col cursor-pointer group card-hover-lift"
           >
+            <a href="/?case=cubic" className="sr-only">TERA BHAI SAMBHAL LEGA — Omnichannel Growth &amp; Viral Reels Case Study</a>
+            <a href="/watch/viral-reels-strategy" className="sr-only">Watch Viral Reels &amp; Ad Strategy Video</a>
             <MediaCard
               study={cubic}
               onSelect={() => onSelectCaseStudy(cubic)}

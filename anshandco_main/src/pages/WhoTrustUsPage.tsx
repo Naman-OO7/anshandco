@@ -229,19 +229,31 @@ export const WhoTrustUsPage: React.FC<WhoTrustUsPageProps> = ({
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-4">
-          <button
-            onClick={onNavigateToWhatWeAre}
+          <a
+            href="/what-we-are"
+            onClick={(e) => {
+              if (!e.metaKey && !e.ctrlKey) {
+                e.preventDefault();
+                onNavigateToWhatWeAre();
+              }
+            }}
             className="px-6 py-3 rounded-full border border-white text-white text-[13px] font-light hover:bg-white hover:text-black transition-colors flex items-center gap-2 cursor-pointer"
           >
             <span>What We Are?</span>
             <ArrowRight size={14} />
-          </button>
-          <button
-            onClick={onOpenContact}
+          </a>
+          <a
+            href="/contact"
+            onClick={(e) => {
+              if (!e.metaKey && !e.ctrlKey) {
+                e.preventDefault();
+                onOpenContact();
+              }
+            }}
             className="px-6 py-3 rounded-full bg-white text-black text-[13px] font-medium hover:bg-neutral-200 transition-colors cursor-pointer"
           >
             Start a Conversation
-          </button>
+          </a>
         </div>
       </div>
     </div>
