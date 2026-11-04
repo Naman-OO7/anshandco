@@ -74,8 +74,11 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
 
             <form
               onSubmit={handleSubmit}
-              toolname="submit_project_inquiry"
-              tooldescription="Submit a business inquiry, project brief, or consultation request to ANSH&CO Brand Custodianship & AI Engineering Studio"
+              {...({
+                toolname: 'submit_project_inquiry',
+                tooldescription:
+                  'Submit a business inquiry, project brief, or consultation request to ANSH&CO Brand Custodianship & AI Engineering Studio'
+              } as Record<string, string>)}
               className="flex flex-col gap-5"
             >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

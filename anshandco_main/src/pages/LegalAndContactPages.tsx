@@ -322,8 +322,11 @@ export const ContactPage: React.FC<LegalPageProps> = ({ onNavigatePage }) => {
           {!submitted ? (
             <form
               onSubmit={handleSubmit}
-              toolname="submit_project_inquiry"
-              tooldescription="Submit a business inquiry, project brief, or consultation request to ANSH&CO Brand Custodianship & AI Engineering Studio"
+              {...({
+                toolname: 'submit_project_inquiry',
+                tooldescription:
+                  'Submit a business inquiry, project brief, or consultation request to ANSH&CO Brand Custodianship & AI Engineering Studio'
+              } as Record<string, string>)}
               className="space-y-5"
             >
               <h2 className="text-[22px] font-light uppercase tracking-tight mb-2">

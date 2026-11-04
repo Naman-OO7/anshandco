@@ -138,9 +138,9 @@ export function registerAnshWebMCPTools(): void {
             id: c.id,
             title: c.title,
             client: c.client,
-            category: c.category,
+            tags: c.tags,
             summary: c.summary,
-            metrics: c.metrics,
+            impact: c.fullDetails?.impact,
             url: `https://anshandco.com/?case=${c.id}`
           }))
         };
